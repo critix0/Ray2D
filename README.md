@@ -14,5 +14,6 @@ local ray = ray2d.new(screengui, start.Position, finish.Position, {
 	FilterDescendantInstances = {start, finish}
 } :: ray2d.RaycastParams2D)
 
-ray:Cast()
+local instance = ray:Cast()
+print(instance)
 ```
